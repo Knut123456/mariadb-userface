@@ -25,4 +25,3 @@ def connect_to_database_def(host, user, password, database, port):
 
     return None 
 
-connect_to_database_def("trading_web_scraper")
