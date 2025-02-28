@@ -1,2 +1,4 @@
 mysql
 Flask
+mysql.connector
+requests

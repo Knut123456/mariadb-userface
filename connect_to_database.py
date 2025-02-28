@@ -1,5 +1,5 @@
 
-def connect_to_database_def(host, user, password, database, port):
+def connect_to_database_def(host, user, password, port):
     from pathlib import Path
     import sys
     parent_div = Path(__file__).parent
@@ -13,7 +13,6 @@ def connect_to_database_def(host, user, password, database, port):
             host=host,
             user=user,
             password=password,
-            database=database,
             port=port 
         )
         if conn.is_connected():
