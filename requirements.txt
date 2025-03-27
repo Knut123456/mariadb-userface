@@ -2,3 +2,5 @@ mysql
 Flask
 mysql.connector
 requests
+flask_session
+werkzeug.security
