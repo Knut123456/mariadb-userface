@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/index.css">
+    <script src="/static/connect"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="forum-div">
-        <form action="" method="post">
-            <input type="text" name="ip address">
-            <input type="text" name >
+        <h1>Connect to database</h1>
+        <form action="main" method="post" class="form">
+            <input type="text" name="ip address" placeholder="ip" id="host">
+            <input type="text" name="username" placeholder="user" id="user">
+            <input type="text" name="password" placeholder="password" id="password">
+            <button id="submit"></button>
         </form>
     </div>
-    <div class="div">
-        <p>hei</p>
+    <div class="database">
+
     </div>
+
+
 </body>
 </html>
