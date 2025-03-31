@@ -1,2 +1,4 @@
 $credential = Get-Credential
-Invoke-Command -VMName ubuntu -Credential $credential -FilePath "C:\Users\Knut\OneDrive - Osloskolen\2IT\IT\årsoppgave\mariadb userface\powershellscript\get_ip_from_vm.ps1"
+
+$credential | Export-Clixml -Path "C:\Users\Knut\OneDrive - Osloskolen\2IT\IT\year-task\mariadb userface\powershellscript\secure\credential.xml"
+Invoke-Command -VMName ubuntu -Credential $credential -FilePath "C:\Users\Knut\OneDrive - Osloskolen\2IT\IT\year-task\mariadb userface\powershellscript\get_ip_from_vm.ps1"
